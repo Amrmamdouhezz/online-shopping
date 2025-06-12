@@ -36,7 +36,7 @@ const CartContextProvider = ({ children }) => {
             if (item.id === product_id) {
                 if (item.quantity > 1) {
                     item.quantity -= 1
-                    updatedCart.push({ ...item, quantity: item.quantity - 1 })
+                    updatedCart.push({ ...item, quantity: item.quantity })
                 }/*if Item quantity = 1 just ignore it and it will not be pushed*/
 
             } else {
