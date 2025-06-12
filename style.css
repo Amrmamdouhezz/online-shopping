@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: black;
+  font-size: 16px;
+  background-color: hsl(13, 31%, 94%);
+  padding: 5rem; /* 20px */
+}
+/* styling for the products on the left and the cart on the right  */
+.list-cart-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+.header-product-list-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+}
+h1{
+    margin-left: 8%;
+}
+/* styling for the products themselves  */
+.product-list{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1.25rem; /* 20px */
+    flex-wrap: wrap;
+}
+/* styling for the cart itself  */
+.product-cart{
+    width: 28%;
+    height: 31.25rem; /* 500px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+
+
+}
+.product-image-with-button{
+    background-image: url(./assets/images/image-baklava-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: -46px;
+    height: 20rem;
+    width: 100%;
+    margin-top: 0;
+    border-radius: 1rem;
+}
+
+/* styling for the button in the product  */
+
+.image-button{
+    border-radius: 2.5rem; /* 20px */
+    text-align: center;
+    width: 18.75rem; /*300px*/
+    height: 4.6875rem; /*75px*/
+    background-color: hsl(13, 31%, 94%);
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    bottom: -37.5px; /*-37.5 (height/2)*/
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* styling for the product description  */
+.product-description{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+gap: 0.5rem; /* 8px */
+}
+.image-button img{
+    margin: auto 5px;
+    height: 40px;
+}
+.category{
+    color: hsl(7, 20%, 60%);
+}
+.name{
+    color: black;
+    font-weight: 500;
+}
+
+/* styling the cart  */
+.cart{
+    width: 20%;
+    background-color: hsl(20, 50%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 20rem;
+}
+.cart h2{
+    color: hsl(14, 86%, 42%);
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+}
+.cart img{
+
+}
+.cart p{
+color: hsl(7, 20%, 60%);
+}
+
+/* Large Screens (Laptops, Desktops) */
+@media (max-width: 1439px) {
+    /* Styles for laptops */
+}
+
+/* Medium Screens (Tablets, Small Laptops) */
+@media (max-width: 1023px) {
+    /* Styles for tablets */
+}
+
+/* Small Screens (Large Phones, Small Tablets) */
+@media (max-width: 767px) {
+    /* Styles for large phones */
+}
+
+/* Extra Small Screens (Mobile Phones) */
+@media (max-width: 479px) {
+    /* Styles for small mobile phones */
+    
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
